@@ -13,17 +13,18 @@ This repository contains code scripts for my submission for the Senior Professio
 Joining the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 hexagon. For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
 
 ### 2. Predictive Analytic Tasks 
-2.1 *Time series challenge*: Predicting the weekly number of expected service requests per hex for the next 4 weeks.
+2.1 *Time series challenge*: Predicting the weekly number of expected service requests per hex for the next 4 weeks. <br />
 2.2 *Introspection challenge*: Predicting the number of requests per Notification  per hex in the last 12 months and identifying the key drivers of these servce requests. 
  
 ## Running the files
 
 ### 1. Data Transformation
-run '1_Timeseries_Challenge.ipynb'
-Output: 
-'sr_hex_Failed_Merges.csv' contains logging of which records the records failed to join
-'sr_hex_Shaun_Moloi.csv' contains the final joined city-hex-polygons-8.geojson to the service requests dataset
+run '1_Timeseries_Challenge.ipynb' <br />
+Output: <br />
+'sr_hex_Failed_Merges.csv' contains logging of which records the records failed to join <br />
+'sr_hex_Shaun_Moloi.csv' contains the final joined city-hex-polygons-8.geojson to the service requests dataset <br />
 
 ### 2 Time Series Challenge
-2.2 Analysis: run 'Introspection_Challenfe_Analysis.ipynb'
-Output Report: Time_Series_Analysis.html.  Navigate to Correlations tab and Pearson's r for a visual display of the correllations.
+2.1 Time
+2.2 Analysis: run 'Introspection_Challenfe_Analysis.ipynb' <br />
+Output Report: Time_Series_Analysis.html.  Navigate to Correlations tab and Pearson's r for a visual display of the correllations. <br />
