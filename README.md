@@ -25,6 +25,6 @@ Output: <br />
 'sr_hex_Shaun_Moloi.csv' contains the final joined city-hex-polygons-8.geojson to the service requests dataset <br />
 
 ### 2 Time Series Challenge
-2.1 Time
-2.2 Analysis: run 'Introspection_Challenfe_Analysis.ipynb' <br />
+2.1 Time series challenge: Time_Series_Challenge-Copy1.ipynb
+2.2 Analysis: run 'Introspection_Challenfge_Analysis.ipynb' <br />
 Output Report: Time_Series_Analysis.html.  Navigate to Correlations tab and Pearson's r for a visual display of the correllations. <br />
