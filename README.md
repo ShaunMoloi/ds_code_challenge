@@ -19,7 +19,11 @@ Joining the file `city-hex-polygons-8.geojson` to the service request dataset, s
 ## Running the files
 
 ### 1. Data Transformation
-In the terminal, run 'python Data_Transformation.py'
+run '1_Timeseries_Challenge.ipynb'
 Output: 
-'sr_hex_Failed_Merges' contains logging of which records the records failed to join
-'sr_hex_Shaun_Moloi' contains the final joined city-hex-polygons-8.geojson to the service requests dataset
+'sr_hex_Failed_Merges.csv' contains logging of which records the records failed to join
+'sr_hex_Shaun_Moloi.csv' contains the final joined city-hex-polygons-8.geojson to the service requests dataset
+
+### 2 Time Series Challenge
+2.2 Analysis: run 'Introspection_Challenfe_Analysis.ipynb'
+Output Report: Time_Series_Analysis.html.  Navigate to Correlations tab and Pearson's r for a visual display of the correllations.
