@@ -27,19 +27,20 @@ sr_df['Longitude'] = sr_df['Longitude'].fillna(0).astype(str).str[0:5]
 sr_df['sr_point'] = sr_df['Latitude'] + sr_df['Longitude'].astype(str)
 
 new_merge = pd.merge(sr_df,hex_df, how='left', left_on = 'sr_point', right_on = 'hex_point', indicator= True)
+rslt_df = new_merge.loc[new_merge['_merge'] != 'both']
+rslt_df.to_csv('sr_hex_Failed_Merges.csv')
+
 
 sr_hex_drop = new_merge.drop(['centroid_lon', 'centroid_lat', 'hex_point', 'sr_point', '_merge', 'Unnamed: 0'], axis=1)
 sr_hex = sr_hex_drop.rename(columns = {'index': 'h3_level8_index'}).fillna(0)
 
 sr_hex.drop_duplicates(subset ='NotificationNumber',
                      keep = 'first', inplace = True)
-sr_hex.to_csv('hexConvert2.csv')
+sr_hex.to_csv('sr_hex_Shaun_Moloi.csv')
 
-#Python 2: 
-#print datetime.now() - startTime 
 
-#Python 3: 
-#print(datetime.now() - startTime)
+print("Script time")
+print(datetime.now() - startTime)
 
 #print('My Version')
 #print(sr_hex.describe())
