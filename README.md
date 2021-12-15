@@ -19,4 +19,7 @@ Joining the file `city-hex-polygons-8.geojson` to the service request dataset, s
 ## Running the files
 
 ### 1. Data Transformation
-In the terminal, run 'python NAME.py'
+In the terminal, run 'python Data_Extraction.py'
+Output: 
+'sr_hex_Failed_Merges' contains logging of which records the records failed to join
+'sr_hex_Shaun_Moloi' contains the final joined city-hex-polygons-8.geojson to the service requests dataset
